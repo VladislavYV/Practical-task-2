@@ -1,0 +1,374 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 1100px;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1110px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    min-height: 800px;
+    background-color: rgba(249, 246, 241, 1);
+}
+
+.header-menu {
+    background-color: rgba(249, 246, 241, 1);
+    min-height: 90px;
+    padding-top: 35px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.menu__list, .basket__list {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.menu__item {
+    margin-right: 35px;
+}
+
+.menu__link {
+    position: relative;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #212121;
+}
+
+.marker::after {
+    content: "";
+    position: absolute; 
+    right: -10px;
+    top: 7px; 
+    border: 3px solid transparent; 
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+.basket__item:nth-child(1) {
+    margin-right: 15px;
+}
+
+.banner {
+    margin-top: 90px;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.slider__item {
+    min-height: 564px;
+    background: url('../img/running_shoes.png') no-repeat right center;
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+}
+
+.slider__text {
+    font-size: 30px;
+}
+
+.slider__big-text {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.button {
+    display: block;
+    width: 220px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.slider__item-price {
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider__price--old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price--new {
+    font-size: 42px;
+    color: #D84033;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+    border: 0;
+    background-color: rgba(249, 246, 241, 1);
+}
+
+.slider__button--prev {
+    left: -100px;
+}
+
+.slider__button--next {
+    right: -100px;
+}
+
+.slider__controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.slider__controls-point {
+    content: '';
+    height: 7px;
+    width: 40px;
+    background-color: #CECECE;
+    margin: 0 8px;
+}
+
+.slider__controls-point:nth-child(2) {
+    background-color: #D7B399;
+}
+
+.dress__wrapper {
+    flex-wrap: wrap;
+}
+
+.dress__item {
+    width: 277px;
+    height: 236px;
+    text-align: right;
+    position: relative;
+}
+
+.dress__item--cream {
+    background-color: #f9f6f1;
+}
+
+.dress__item--gray {
+    background-color: #f4f4f4;
+}
+
+.dress__item-text {
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.63px;
+}
+
+.free-delivery__wrapper {
+    width: 100%;
+    background-color: #212121;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.free-delivery__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.free-delivery__big-text {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.men-women__wrapper {
+    display: flex;
+}
+
+.men-women__cart {
+    height: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-top: 50px;
+}
+
+.men {
+    background: url('../img/men.png') no-repeat right bottom;
+    background-color: rgba(249, 246, 241, 1);
+    width: 50%;
+}
+
+.women {
+    background: url('../img/women.png') no-repeat right bottom;
+    background-color: rgba(249, 224, 224, 1);
+    width: 50%;
+}
+
+.men-women__cart-big-text {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.men-women__cart-big-text>b {
+    font-weight: 500;
+    margin: 0;
+}
+
+.men-women__cart-text {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    margin-top: 25px;
+}
+
+.men-women__cart-button {
+    width: 80px;
+    height: 30px;
+    flex-shrink: 0;
+    background-color: rgba(215, 179, 153, 1);
+    border: 0;
+}
+
+.men-women__cart-link {
+    margin-top: 40px;
+}
+
+.gifts {
+    background-color: rgba(33, 33, 33, 1);
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.gifts__wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.gifts__text {
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.gifts__input {
+    width: 255px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: rgba(249, 246, 241, 1);
+    border: 0;
+    color: rgba(141, 141, 141, 1);
+    padding-left: 20px;
+}
+
+.gifts__link {
+    display: flex;
+    width: 185px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: rgba(215, 179, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.new {
+    height: 650px;
+}
+
+.new__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.new__carts {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
